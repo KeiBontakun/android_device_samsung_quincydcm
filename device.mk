@@ -15,7 +15,7 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/quincyatt/quincyatt-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/quincydcm/quincydcm-vendor.mk)
 
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/quincyatt/overlay

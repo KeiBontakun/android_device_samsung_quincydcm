@@ -24,16 +24,16 @@
 -include device/samsung/quincy-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/quincyatt/BoardConfigVendor.mk
+-include vendor/samsung/quincydcm/BoardConfigVendor.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := SGH-I717
+TARGET_BOOTLOADER_BOARD_NAME := SC-05D
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SGH-I717,quincyatt
+TARGET_OTA_ASSERT_DEVICE := SC-05D,quincydcm
 
 # Kernel
 TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
-TARGET_KERNEL_CONFIG        := cyanogenmod_quincyatt_defconfig
+TARGET_KERNEL_CONFIG        := cyanogenmod_quincydcm_defconfig
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true
 BOARD_KERNEL_BASE           := 0x48000000
 BOARD_FORCE_RAMDISK_ADDRESS := 0x49400000
