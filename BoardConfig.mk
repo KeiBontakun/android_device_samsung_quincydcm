@@ -32,7 +32,7 @@ TARGET_BOOTLOADER_BOARD_NAME := SC-05D
 TARGET_OTA_ASSERT_DEVICE := SC-05D,quincydcm
 
 # Kernel
-TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-common
+TARGET_KERNEL_SOURCE        := kernel/samsung/msm8660-dcm
 TARGET_KERNEL_CONFIG        := cyanogenmod_quincydcm_defconfig
 BOARD_KERNEL_CMDLINE        := androidboot.hardware=qcom usb_id_pin_rework=true
 BOARD_KERNEL_BASE           := 0x48000000
@@ -46,3 +46,8 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1073741824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+# secondary sdcard
+BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk0p29
+
+# vold
+BOARD_VOLD_MAX_PARTITIONS := 28
