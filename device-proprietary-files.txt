@@ -3,6 +3,14 @@
 lib/hw/nfc.qcom.so
 lib/libpn544_fw.so
 
+# apn
+etc/apns-conf.xml
+
+# font
+vendor/etc/fallback_fonts.xml
+fonts/MTLmr3m.ttf
+fonts/truetypeEmoji.ttf
+
 # GPS
 bin/gpsone_daemon
 lib/libgpsone_bit_api.so
