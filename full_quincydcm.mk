@@ -27,7 +27,7 @@ PRODUCT_PACKAGES := \
 
 BOARD_HAVE_NFC := true
 
-# quincydcm Ramdisk
+# Ramdisk
 PRODUCT_COPY_FILES += \
     device/samsung/quincydcm/ramdisk/fstab.qcom:root/fstab.qcom \
     device/samsung/quincydcm/ramdisk/init.prop.sh:root/init.prop.sh \
